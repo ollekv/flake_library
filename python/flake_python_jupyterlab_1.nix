@@ -47,6 +47,9 @@
                 ipykernel
                 ipython
 
+                # tools
+                sqlalchemy
+
                 # scientific computing
                 pandas # Data structures & tools
                 numpy # Array & matrices
