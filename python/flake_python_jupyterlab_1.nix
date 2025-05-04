@@ -31,8 +31,8 @@
       # Development environment output
       devShells = forAllSystems ({ pkgs }: {
         default = let
-          # Use Python 3.11
-          python = pkgs.python311;
+          # Use Python 3.12
+          python = pkgs.python312;
 
         in pkgs.mkShell {
           # The Nix packages provided in the environment
@@ -60,10 +60,12 @@
                 # Visualization
                 matplotlib # plot & graphs
                 seaborn # heat maps, time series, violin plot
+                plotly # interactive plots
+                great_tables # tables
 
                 # Algorithmic Libraries
                 scikit-learn # Machine learning: regression, classificatons,..
-                statsmodels # Ecplore data, estimate statistical models, & perform statistical test.
+                # statsmodels # Ecplore data, estimate statistical models, & perform statistical test.
 
                 # Formatting
                 black

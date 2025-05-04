@@ -13,8 +13,8 @@
     {
       devShells = forEachSupportedSystem ({ pkgs }: {
         default = pkgs.mkShell {
-          packages = with pkgs; [ python311 virtualenv ] ++
-            (with pkgs.python311Packages; [ pip numpy pandas ]);
+          packages = with pkgs; [ python312 virtualenv ] ++
+            (with pkgs.python312Packages; [ pip numpy pandas ]);
         };
       });
     };

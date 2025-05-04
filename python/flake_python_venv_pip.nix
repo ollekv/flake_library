@@ -13,8 +13,8 @@
     in rec {
       devShell = pkgs.mkShell {
         buildInputs = with pkgs; [
-          python311Full
-          python311Packages.pyqt5
+          python312Full
+          python312Packages.pyqt5
         ];
         shellHook = ''
           # Fixes libstdc++ issues and libgl.so issues (//e.g. when running jupyter lab)
